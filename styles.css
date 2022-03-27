@@ -30,6 +30,8 @@ body {
 .page__header {
   display: flex;
   justify-content: center;
+  
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.158);
 }
 
 @keyframes title_color {
@@ -186,5 +188,4 @@ svg {
 
 .icon {
   z-index: 1;
-  fill: rgba(255, 0, 119, 0.568);
 }
