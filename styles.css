@@ -33,9 +33,37 @@ body {
 }
 
 @keyframes title_color {
-  50% {
-    
+  10% {
+    text-shadow: 10px 0 25px rgb(255, 0, 0);
   }
+  20% {
+    text-shadow: 0 10px 25px rgb(255, 72, 0);
+  }
+  30% {
+    text-shadow: -10px 0 25px rgb(255, 251, 0);
+  }
+  40% {
+    text-shadow: 0 -10px 25px rgb(145, 255, 0);
+  }
+  50% {
+    text-shadow: 10px 0 25px rgb(0, 255, 136);
+  }
+  60% {
+    text-shadow: 0 -10px 25px rgb(0, 255, 191);
+  }
+  70% {
+    text-shadow: -10px 0 25px rgb(0, 89, 255);
+  }
+  80% {
+    text-shadow: 0 -10px 25px rgb(132, 0, 255);
+  }
+  90% {
+    text-shadow: 10px 0 25px rgb(195, 0, 255);
+  }
+}
+
+.title:hover {
+  animation: title_color 10s infinite linear;
 }
 
 .title {
@@ -128,29 +156,35 @@ svg {
 }
 
 .yellow__circle {
-  animation-name: yellow_c;
-  animation-duration: 25s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation: yellow_c 25s infinite linear;
 }
 
 .pink__circle {
-  animation-name: pink_c;
-  animation-duration: 35s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation: pink_c 35s infinite linear;
 }
 
 .green__circle {
-  animation-name: green_c;
-  animation-duration: 75s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation: green_c 75s infinite linear;
 }
 
 .blue__circle {
-  animation-name: blue_c;
-  animation-duration: 120s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation: blue_c 120s infinite linear;
+}
+
+.menu__socials {
+  min-height: 3em;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px;
+}
+
+.menu__socials a {
+  width: 80px;
+  height: 80px;
+}
+
+.icon {
+  z-index: 1;
+  fill: rgba(255, 0, 119, 0.568);
 }
